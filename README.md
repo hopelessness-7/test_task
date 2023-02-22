@@ -1,66 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## About test task
 
-## About Laravel
+Completed the first 4 points. I also covered the code with tests.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Project Description
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This project is divided into two parts. Client and server. Communication is done using the rest API. The project allows you to create elements, save them to the database, update and delete them. These actions happen on the fly, that is, without reloading the page. In addition, user authorization passes through the artisan command. Namely "php artisan login: login password". After that, a token will appear in the console, which will allow you to send requests from the client to the server. The token is valid for five minutes. Next, you need to get a new one.
+If a pop-up window appears with an error when working on the client, then your token is not valid or an error was made during copying. I understand that this is not the most convenient way of working, usually authorization goes on the client and allows you to save the token, and not register it all the time.
+Tests have also been added. To run them, you need to open the file "tests/Feature/TaskTest.php". After that, specify a new token at the very beginning and write "./vendor/bin/phpunit" in the console.
+If there are any problems with the deployment or operation of the project, I am ready to answer all questions and show the work. I use telegram for communication.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Technology stack
 
-## Learning Laravel
+- PHP 8.1
+- Composer 2.2.5
+- MySQL
+- bootstrap 5.0
+- JS
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The development was carried out using a local XAMPP server.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Project installation
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+In order to install the project, you must:
 
-## Laravel Sponsors
+- Check that php is global and you can run the command "php -v" (checking the version and making sure php is available)
+- Make sure that composer is installed and "composer --version" is available and corresponds to version 2.2.*
+- Use the git clone command to install the project on your computer
+- Once the project is installed you need to open it using any ide
+- After opening the project in the IDE, you need to open the console and write "composer update"
+- You need to create a .env file (command in the console "cp .env.example .env")
+- Setting up the .env file. Specify your database, login and password from it (fields DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD)
+- Next, in the console, write "php artisan key:generate"
+- Next, we write in the console first "php artisan migrate --seed", and after "php artisan serv"
+
+This completes the installation of the project, you can use!!!
+
+## 
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

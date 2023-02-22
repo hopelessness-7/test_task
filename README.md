@@ -50,4 +50,4 @@ An error occurred due to loss of internet. And the whole project flew to the git
 | Upload to git                         | 15 min        | 25 min    | data flew away with one commit                          |
 
 
-
+Total task completion time - 6.5 hours

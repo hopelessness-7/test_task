@@ -36,9 +36,18 @@ In order to install the project, you must:
 
 This completes the installation of the project, you can use!!!
 
-## 
+## Report
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+An error occurred due to loss of internet. And the whole project flew to the git at once. But the description of the development is presented below, also how much time was spent.
+
+| Task                                  | Grade         | Spent     | Comment                                                 |
+| --------------------------------------| ------------- |-----------|---------------------------------------------------------|
+| Loading a project and its add-in      | 5 min         | 5 min     | not comment                                             |
+| Add authorization via artisan command | 10 min        | 15 min    | Command not register                                    |
+| Construction backend                  | 1 hours       | 45-50 min | not comment                                             |
+| Construction frontend                 | 3 hours       | 4 hours   | Difficulty in receiving requests and outputting them    |
+| Testing                               | 1 hours       | 1 hours   | not comment                                             |
+| Upload to git                         | 15 min        | 25 min    | data flew away with one commit                          |
 
 
 
